@@ -21,7 +21,7 @@
 </html>
 ````
 ## Script.js:
-'''js
+```js
 document.getElementById('uploadForm').addEventListener('submit', async (event) => {
     event.preventDefault();
 
@@ -38,7 +38,7 @@ document.getElementById('uploadForm').addEventListener('submit', async (event) =
     const result = await response.json();
     document.getElementById('fileContents').textContent = result.content;
 });
-'''
+```
 ## Server.js:
 ```js
 const express = require('express');
